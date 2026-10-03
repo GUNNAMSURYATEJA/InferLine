@@ -1,0 +1,16 @@
+# Pinned on 2026-10-03 (Python 3.12, Linux, CPU-only).
+# Install torch from the CPU wheel index FIRST to avoid the giant CUDA wheel:
+#   pip3 install --break-system-packages torch==2.14.1+cpu --index-url https://download.pytorch.org/whl/cpu
+torch==2.14.1+cpu
+fastapi==0.142.2
+uvicorn==0.54.0
+transformers==5.18.0
+httpx==0.28.1
+pytest==9.1.1
+tokenizers==0.23.2
+huggingface-hub==1.33.0
+safetensors==0.8.0
+starlette==1.7.0
+pydantic==2.13.5
+anyio==4.15.1
+numpy==1.26.4  # system scipy 1.11.4 requires numpy<1.28; transformers imports scipy
